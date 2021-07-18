@@ -36,3 +36,7 @@ $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/lmi/lmi-vendor.mk)
+
+#Remove  unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
